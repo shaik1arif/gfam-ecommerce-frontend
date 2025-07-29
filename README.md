@@ -23,14 +23,18 @@ A simple e-commerce frontend built with **React.js**, using **React Router**, **
 
 ## Folder Structure
 
+## Folder Structure
+
+```
 src/
-├── components/ # Reusable UI components (e.g., Navbar)
-├── pages/ # Page components (Login, Register, Dashboard, etc.)
-├── utils/ # Helper functions or auth logic
-├── assets/ # Static files/images (optional)
+├── components/      # Reusable UI components (e.g., Navbar)
+├── pages/           # Page components (Login, Register, Dashboard, etc.)
+├── utils/           # Helper functions or auth logic
+├── assets/          # Static files/images (optional)
 ├── App.jsx
 ├── main.jsx
 ├── index.css
+```
 
 ## ⚙️ Setup Instructions
 
