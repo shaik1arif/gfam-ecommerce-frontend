@@ -1,12 +1,57 @@
-# React + Vite
+# GFam Ecommerce Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple e-commerce frontend built with **React.js**, using **React Router**, **Axios**, and **plain CSS** (no Tailwind). It interacts with a Node.js/Express backend to support user registration, login, and product management.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Register & Login functionality (with JWT token storage)
+- Dashboard greeting (shows logged-in user's name)
+- View list of products
+- Create new products (title, description, price)
+- Delete existing products
+- Responsive UI
+- 404 Not Found page for invalid routes
+- Protected routes using token from localStorage
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js + Vite
+- React Router DOM
+- Axios
+- Plain CSS (no Tailwind)
+- Context API / useState for auth state
+
+## Folder Structure
+
+src/
+├── components/ # Reusable UI components (e.g., Navbar)
+├── pages/ # Page components (Login, Register, Dashboard, etc.)
+├── utils/ # Helper functions or auth logic
+├── assets/ # Static files/images (optional)
+├── App.jsx
+├── main.jsx
+├── index.css
+
+## ⚙️ Setup Instructions
+
+1. Clone the repository  
+   `git clone https://github.com/shaik1arif/gfam-ecommerce-frontend.git`
+
+2. Install dependencies  
+   `npm install`
+
+3. Start the dev server  
+   `npm run dev`
+
+4. Make sure the backend server is also running at `http://localhost:5000`
+
+## Pages Overview
+
+- `/register` – Register a new user
+- `/login` – Login with email and password
+- `/dashboard` – Welcome page after login
+- `/products` – List of all products (with delete if logged in)
+- `/create` – Form to create a new product (requires login)
+- `*` – 404 Not Found page for invalid URLs
+
+
